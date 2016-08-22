@@ -1,0 +1,44 @@
+#myCanvas
+{ 
+	border: 5px solid black;
+	margin: 20px;
+	padding-left: 0;
+	padding-right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 800px;
+	background: #FFFFFF;
+}
+#centerTitle
+{
+	padding-left: 0;
+	padding-right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 240px;
+	font-size: 30px;
+}
+#center
+{
+	padding-left: 0;
+	padding-right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 165px;
+}
+#ebbg
+{
+	background: url(ebwp3.jpg);
+	background-size: 800px 450px;
+	//background-position: right;
+	//background-repeat: no-repeat;
+}
+#eblogo
+{
+	background: url("eblogo.png") no-repeat 1100px 630px, 
+		linear-gradient(#1A033B, #1A033B, #1A033B, #1A033B, #1A033B, #45193C); /* Good */
+	background-attachment: fixed;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Alien Infestation</title>
+        <audio id="bgmusic" loop="infinite">
+            <source src="fortress.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="gameover" loop="infinite">
+            <source src="gameover.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="finaldiff" loop="infinite">
+            <source src="finaldiff.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="victoryH">
+            <source src="hellvictory.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="victory">
+            <source src="victory.mp3" type="audio/mpeg">
+        </audio>
+        <link href="style.css" type="text/css" rel="stylesheet"/>
+        <script src="spritelib.js" type="text/javascript"></script>
+        <script src="test.js" type="text/javascript"></script>
+        <script src="specialFuncs.js" type="text/javascript"></script>
+    </head>
+
+    <body id="eblogo" onload="init()">
+        <div id="centerTitle" style="color:#FFFFFF">ALIEN INFESTATION</div>
+        <p style="color:#FFFFFF">
+            <span id="scorePos"> Score: <b id="score" style="color:#FFFFFF">0</b></span>
+            <span id="roundPos"> Wave: <b id="round" style="color:#FFFFFF">1</b></span>
+        </p>
+        <p id="instructions">
+            Controls:<br><br>
+
+            Left Arrow - Move Left<br>
+            Right Arrow - Move Right<br>
+            Spacebar - Fire<br><br>
+
+            Goal:<br><br>
+
+            Kill all enemies. Survive 50 waves.<br>
+            Do not allow enemies to reach the danger zone.<br>
+        </p>
+        <canvas id="myCanvas" width="800" height="600"></canvas>
+        <div>
+        <input id="center" type="button" value="Stop" onclick="stopGame();"/>
+        <input id="center" type="button" value="Start" onclick="startGame();"/>
+        </div>
+        <img id="sprites" src="invader.png" style="display:none"/>
+        <img id="player" src="invader2.png" style="display:none"/>
+    </body>
+
+</html>
+    
